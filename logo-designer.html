@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Logo Designer | PixelStudio</title>
+
+    <meta name="description" content="Design a professional logo concept with PixelStudio. Customize name, symbol, colors and layout, then download a high-resolution PNG.">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&family=Outfit:wght@400;700&family=Bricolage+Grotesque:wght@400;700&family=Fraunces:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/logo-designer.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <a href="index.html" class="brand">
+        <span class="brand-icon">P</span>
+        <span class="brand-name">Pixel<span>Studio</span></span>
+    </a>
+
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#services" class="active">Services</a>
+        <a href="index.html#work">Our Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <button class="theme-toggle" id="themeToggle">
+        ☀
+    </button>
+
+    <button class="menu-toggle" id="menuToggle">
+        ☰
+    </button>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="designer-hero">
+
+    <div class="hero-text">
+
+        <div class="eyebrow">
+            <span></span>
+            PIXELSTUDIO / LOGO DESIGNER
+        </div>
+
+        <h1>
+            Build your
+            <span>brand identity.</span>
+        </h1>
+
+        <p>
+            Create a professional logo concept for your brand.
+            Customize the name, symbol, colors and layout,
+            then preview your identity in multiple versions.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= DESIGNER ================= -->
+
+<main class="designer">
+
+    <!-- LEFT CONTROLS -->
+
+    <aside class="controls">
+
+        <div class="control-header">
+            <div>
+                <span class="section-label">01 / CUSTOMIZE</span>
+                <h2>Logo Settings</h2>
+            </div>
+        </div>
+
+
+        <!-- BRAND -->
+
+        <div class="control-group">
+
+            <label for="brandName">
+                Brand Name
+            </label>
+
+            <input
+                type="text"
+                id="brandName"
+                value="PixelStudio"
+            >
+
+        </div>
+
+
+        <div class="control-group">
+
+            <label for="tagline">
+                Tagline
+            </label>
+
+            <input
+                type="text"
+                id="tagline"
+                value="Creative Digital Solutions"
+            >
+
+        </div>
+
+
+        <!-- SYMBOL -->
+
+        <div class="control-group">
+
+            <label for="symbol">
+                Logo Symbol
+            </label>
+
+            <select id="symbol">
+
+                <option value="pixel">Pixel Grid</option>
+                <option value="circle">Circle</option>
+                <option value="hex">Hexagon</option>
+                <option value="spark">Spark</option>
+
+            </select>
+
+        </div>
+
+
+        <!-- LAYOUT -->
+
+        <div class="control-group">
+
+            <label for="layout">
+                Layout
+            </label>
+
+            <select id="layout">
+
+                <option value="horizontal">
+                    Symbol + Wordmark
+                </option>
+
+                <option value="vertical">
+                    Stacked
+                </option>
+
+                <option value="symbol">
+                    Symbol Only
+                </option>
+
+                <option value="wordmark">
+                    Wordmark Only
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- FONT -->
+
+        <div class="control-group">
+
+            <label for="font">
+                Typography
+            </label>
+
+            <select id="font">
+
+                <option value="Outfit">
+                    Outfit
+                </option>
+
+                <option value="Bricolage Grotesque">
+                    Bricolage Grotesque
+                </option>
+
+                <option value="Fraunces">
+                    Fraunces
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- COLORS -->
+
+        <div class="color-grid">
+
+            <div class="control-group">
+
+                <label for="brandColor">
+                    Brand Color
+                </label>
+
+                <input
+                    type="color"
+                    id="brandColor"
+                    value="#FF4D0F"
+                >
+
+            </div>
+
+
+            <div class="control-group">
+
+                <label for="accentColor">
+                    Accent
+                </label>
+
+                <input
+                    type="color"
+                    id="accentColor"
+                    value="#FF8A5B"
+                >
+
+            </div>
+
+        </div>
+
+
+        <!-- BACKGROUND -->
+
+        <div class="control-group">
+
+            <label>
+                Preview Background
+            </label>
+
+            <div class="background-buttons">
+
+                <button
+                    class="background-btn active"
+                    data-background="light">
+                    Light
+                </button>
+
+                <button
+                    class="background-btn"
+                    data-background="dark">
+                    Dark
+                </button>
+
+                <button
+                    class="background-btn"
+                    data-background="transparent">
+                    Transparent
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <button id="downloadLogo" class="download-btn">
+            Download Logo PNG
+            <span>↓</span>
+        </button>
+
+    </aside>
+
+
+    <!-- RIGHT PREVIEW -->
+
+    <section class="preview-area">
+
+        <div class="preview-header">
+
+            <div>
+                <span class="section-label">
+                    02 / LIVE PREVIEW
+                </span>
+
+                <h2>Your Logo</h2>
+            </div>
+
+            <span id="previewStatus">
+                Light Version
+            </span>
+
+        </div>
+
+
+        <!-- MAIN LOGO -->
+
+        <div
+            class="logo-preview"
+            id="logoPreview">
+
+            <div
+                class="logo-container"
+                id="logoContainer">
+
+                <div
+                    class="logo-symbol"
+                    id="logoSymbol">
+                    P
+                </div>
+
+                <div class="logo-text">
+
+                    <strong id="previewName">
+                        PixelStudio
+                    </strong>
+
+                    <small id="previewTagline">
+                        Creative Digital Solutions
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- VERSIONS -->
+
+        <div class="versions">
+
+            <div class="version-card">
+
+                <div class="version-heading">
+                    <span>LIGHT</span>
+                    <small>Light background</small>
+                </div>
+
+                <div class="mini-preview light-preview">
+
+                    <div class="mini-logo">
+                        <span class="mini-symbol">P</span>
+                        <strong id="lightName">
+                            PixelStudio
+                        </strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="version-card">
+
+                <div class="version-heading">
+                    <span>DARK</span>
+                    <small>Dark background</small>
+                </div>
+
+                <div class="mini-preview dark-preview">
+
+                    <div class="mini-logo">
+                        <span class="mini-symbol">P</span>
+                        <strong id="darkName">
+                            PixelStudio
+                        </strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="version-card">
+
+                <div class="version-heading">
+                    <span>ICON</span>
+                    <small>Social / App</small>
+                </div>
+
+                <div class="mini-preview icon-preview">
+
+                    <div
+                        class="icon-logo"
+                        id="iconLogo">
+                        P
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- INFO -->
+
+        <div class="designer-info">
+
+            <div>
+                <span>FORMAT</span>
+                <strong>PNG</strong>
+            </div>
+
+            <div>
+                <span>QUALITY</span>
+                <strong>HIGH RESOLUTION</strong>
+            </div>
+
+            <div>
+                <span>USE</span>
+                <strong>DIGITAL + PRINT</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="designer-cta">
+
+    <span class="section-label">
+        NEED A COMPLETE BRAND IDENTITY?
+    </span>
+
+    <h2>
+        Turn your logo into a
+        <span>complete brand system.</span>
+    </h2>
+
+    <a href="contact.html" class="cta-btn">
+        Talk to PixelStudio
+        <span>→</span>
+    </a>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-brand">
+
+        <a href="index.html" class="brand">
+            <span class="brand-icon">P</span>
+            <span class="brand-name">Pixel<span>Studio</span></span>
+        </a>
+
+        <p>
+            Integrated digital creative solutions
+            for modern brands.
+        </p>
+
+    </div>
+
+    <div class="footer-links">
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+
+    </div>
+
+    <div class="footer-copy">
+        © 2026 PixelStudio. All rights reserved.
+    </div>
+
+</footer>
+
+
+<script src="js/logo-designer.js"></script>
+
+</body>
+</html>

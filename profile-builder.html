@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile Builder | PixelStudio</title>
+
+    <link rel="stylesheet" href="css/profile-builder.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="social-branding.html" class="logo">
+        Pixel<span>Studio</span>
+    </a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="brand-design.html" class="active">Services</a>
+        <a href="index.html">Our Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>
+
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="eyebrow">
+            01 / SOCIAL BRANDING
+        </span>
+
+        <h1>
+            Profile <span>Builder.</span>
+        </h1>
+
+        <p>
+            Build your professional social-media profile
+            identity using the settings below.
+        </p>
+
+    </div>
+
+</section>
+
+
+<main class="builder">
+
+    <!-- PROFILE SETTINGS -->
+
+    <section class="controls">
+
+        <div class="section-title">
+            <span>01</span>
+            <h2>Profile Building Settings</h2>
+        </div>
+
+        <label>Profile Name</label>
+
+        <input
+            type="text"
+            id="profileName"
+            value="PixelStudio"
+            placeholder="Enter profile name"
+        >
+
+
+        <label>Username</label>
+
+        <input
+            type="text"
+            id="username"
+            value="@pixelstudio"
+            placeholder="@username"
+        >
+
+
+        <label>Bio</label>
+
+        <textarea
+            id="bio"
+            placeholder="Write your profile bio"
+        >Creative Digital Agency
+Branding • Design • Digital Solutions
+Let's build something amazing.</textarea>
+
+
+        <label>Category</label>
+
+        <select id="category">
+
+            <option>Digital Creator</option>
+            <option>Creative Agency</option>
+            <option>Designer</option>
+            <option>Business</option>
+            <option>Personal Brand</option>
+
+        </select>
+
+
+        <label>Website</label>
+
+        <input
+            type="text"
+            id="website"
+            value="www.pixelstudio.com"
+            placeholder="www.example.com"
+        >
+
+
+        <label>Profile Color</label>
+
+        <div class="color-control">
+
+            <input
+                type="color"
+                id="profileColor"
+                value="#ff5a1f"
+            >
+
+            <span id="colorValue">
+                #FF5A1F
+            </span>
+
+        </div>
+
+
+        <label>Profile Image</label>
+
+        <input
+            type="file"
+            id="profileImage"
+            accept="image/*"
+        >
+
+
+        <button
+            class="build-btn"
+            id="buildBtn"
+        >
+            Build Profile →
+        </button>
+
+        <div
+            class="success-message"
+            id="successMessage"
+        >
+            Profile built successfully ✓
+        </div>
+
+    </section>
+
+
+    <!-- LIVE PREVIEW -->
+
+    <section class="preview-section">
+
+        <div class="section-title">
+
+            <span>02</span>
+
+            <h2>Live Preview</h2>
+
+        </div>
+
+
+        <div
+            class="profile-preview"
+            id="profilePreview"
+        >
+
+            <div
+                class="profile-top"
+                id="profileTop"
+            ></div>
+
+
+            <div class="profile-body">
+
+                <div class="avatar-wrapper">
+
+                    <div
+                        class="avatar"
+                        id="avatar"
+                    >
+                        P
+                    </div>
+
+                </div>
+
+
+                <div class="profile-header">
+
+                    <div>
+
+                        <h2 id="previewName">
+                            PixelStudio
+                        </h2>
+
+                        <p
+                            class="preview-username"
+                            id="previewUsername"
+                        >
+                            @pixelstudio
+                        </p>
+
+                    </div>
+
+                    <button class="follow-btn">
+                        Follow
+                    </button>
+
+                </div>
+
+
+                <p
+                    class="preview-category"
+                    id="previewCategory"
+                >
+                    Digital Creator
+                </p>
+
+
+                <p
+                    class="preview-bio"
+                    id="previewBio"
+                >
+                    Creative Digital Agency
+                    <br>
+                    Branding • Design • Digital Solutions
+                    <br>
+                    Let's build something amazing.
+                </p>
+
+
+                <p
+                    class="preview-website"
+                    id="previewWebsite"
+                >
+                    www.pixelstudio.com
+                </p>
+
+
+                <div class="profile-stats">
+
+                    <div>
+                        <strong>128</strong>
+                        <span>Posts</span>
+                    </div>
+
+                    <div>
+                        <strong>12.4K</strong>
+                        <span>Followers</span>
+                    </div>
+
+                    <div>
+                        <strong>320</strong>
+                        <span>Following</span>
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="download-btn"
+                    id="downloadBtn"
+                >
+                    Download Profile Card
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- PROCESS -->
+
+<section class="process">
+
+    <div class="section-title">
+
+        <span>03</span>
+
+        <h2>Profile Branding Process</h2>
+
+    </div>
+
+
+    <div class="process-grid">
+
+        <div class="process-card">
+            <span>01</span>
+            <h3>Profile Identity</h3>
+            <p>
+                Add your brand name and username
+                to establish your profile identity.
+            </p>
+        </div>
+
+
+        <div class="process-card">
+            <span>02</span>
+            <h3>Bio & Category</h3>
+            <p>
+                Create a clear bio and select the
+                category that represents your brand.
+            </p>
+        </div>
+
+
+        <div class="process-card">
+            <span>03</span>
+            <h3>Visual Style</h3>
+            <p>
+                Select a profile colour and upload
+                your profile image.
+            </p>
+        </div>
+
+
+        <div class="process-card">
+            <span>04</span>
+            <h3>Final Profile</h3>
+            <p>
+                Preview your complete profile identity
+                before using it on social media.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+    © 2026 PixelStudio. All Rights Reserved.
+</footer>
+
+
+<script src="js/profile-builder.js"></script>
+
+</body>
+</html>

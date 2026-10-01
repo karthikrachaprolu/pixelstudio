@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PixelStudio – Creative Digital Agency</title>
+
+    <meta name="description"
+        content="PixelStudio creates strong, recognizable and professional brand identities for modern businesses and creators.">
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Hero Images -->
+    <link rel="preload" as="image" href="assets/images/hero-1.jpg">
+    <link rel="preload" as="image" href="assets/images/hero-2.jpg">
+    <link rel="preload" as="image" href="assets/images/hero-3.jpg">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER / NAVBAR
+    ========================== -->
+
+    <header class="header" id="header">
+
+        <div class="container nav-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+
+                <span class="logo-mark">
+                    P
+                </span>
+
+                <span class="logo-text">
+                    Pixel<span>Studio</span>
+                </span>
+
+            </a>
+
+
+            <!-- Navigation -->
+            <nav class="navbar" id="navbar">
+
+                <a href="index.html" class="nav-link active">
+                    Home
+                </a>
+
+                <a href="#services" class="nav-link">
+                    Services
+                </a>
+
+                <a href="#work" class="nav-link">
+                    Our Work
+                </a>
+
+                <a href="about.html" class="nav-link">
+                    About
+                </a>
+
+                <a href="contact.html" class="nav-link">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <!-- Header Actions -->
+            <div class="nav-actions">
+
+                <!-- Theme Toggle -->
+                <button
+                    class="theme-toggle"
+                    id="themeToggle"
+                    aria-label="Toggle dark and light mode">
+
+                    <span
+                        class="theme-icon"
+                        id="themeIcon">
+                        ☀
+                    </span>
+
+                </button>
+
+
+                <!-- Mobile Menu -->
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Open navigation menu">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+
+    <main>
+
+        <section
+            class="hero"
+            id="home">
+
+            <!-- Hero Background Slides -->
+
+            <div class="hero-slides">
+
+                <div
+                    class="hero-slide active"
+                    style="background-image: url('assets/images/hero-1.jpg');">
+                </div>
+
+                <div
+                    class="hero-slide"
+                    style="background-image: url('assets/images/hero-2.jpg');">
+                </div>
+
+                <div
+                    class="hero-slide"
+                    style="background-image: url('assets/images/hero-3.jpg');">
+                </div>
+
+            </div>
+
+
+            <!-- Dark Overlay -->
+
+            <div class="hero-overlay"></div>
+
+
+            <!-- Hero Content -->
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+                    <div class="hero-badge">
+
+                        <span class="badge-dot"></span>
+
+                        Creative Brand Design Solutions
+
+                    </div>
+
+
+                    <h1 class="hero-title">
+
+                        We Create
+                        <span>Powerful Brands</span>
+                        That Matter.
+
+                    </h1>
+
+
+                    <p class="hero-description">
+
+                        PixelStudio creates strong, memorable and
+                        professional brand identities that help businesses
+                        stand out and connect with their audience.
+
+                    </p>
+
+
+                    <!-- Hero Buttons -->
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="brand-design.html"
+                            class="btn btn-primary">
+
+                            Explore Brand Design
+
+                            <span>
+                                ↗
+                            </span>
+
+                        </a>
+
+
+                        <a
+                            href="#work"
+                            class="btn btn-secondary">
+
+                            View Our Work
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Hero Slider Controls -->
+
+                <div class="hero-controls">
+
+                    <button
+                        class="slider-btn"
+                        id="prevSlide"
+                        aria-label="Previous slide">
+
+                        ←
+
+                    </button>
+
+
+                    <div
+                        class="slider-dots"
+                        id="sliderDots">
+
+                        <button
+                            class="slider-dot active"
+                            data-slide="0">
+                        </button>
+
+                        <button
+                            class="slider-dot"
+                            data-slide="1">
+                        </button>
+
+                        <button
+                            class="slider-dot"
+                            data-slide="2">
+                        </button>
+
+                    </div>
+
+
+                    <button
+                        class="slider-btn"
+                        id="nextSlide"
+                        aria-label="Next slide">
+
+                        →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Scroll Indicator -->
+
+            <div class="scroll-indicator">
+
+                <span>
+                    Scroll to explore
+                </span>
+
+                <div class="scroll-line"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             INTRO SECTION
+        ========================== -->
+
+        <section class="intro section">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="section-label">
+                        ABOUT PIXELSTUDIO
+                    </span>
+
+
+                    <h2>
+
+                        Turning ideas into
+                        <span>
+                            powerful brands.
+                        </span>
+
+                    </h2>
+
+
+                    <p>
+
+                        PixelStudio is focused on creating meaningful,
+                        visually powerful and professional brand identities
+                        for businesses, creators and modern organizations.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SERVICES SECTION
+        ========================== -->
+
+        <section
+            class="services section"
+            id="services">
+
+            <div class="container">
+
+                <div class="section-top">
+
+                    <div>
+
+                        <span class="section-label">
+                            WHAT WE DO
+                        </span>
+
+
+                        <h2>
+
+                            Creative solutions.
+                            <span>
+                                Built for brands.
+                            </span>
+
+                        </h2>
+
+                    </div>
+
+
+                    <p>
+
+                        From visual identity to social branding,
+                        PixelStudio helps businesses build a strong
+                        and recognizable brand presence.
+
+                    </p>
+
+                </div>
+
+
+                <!-- ONLY BRAND DESIGN -->
+
+                <div class="services-grid">
+
+                    <article class="service-card">
+
+                        <div class="service-number">
+                            01
+                        </div>
+
+
+                        <div class="service-icon">
+                            ✦
+                        </div>
+
+
+                        <h3>
+                            Brand Design
+                        </h3>
+
+
+                        <p>
+
+                            Build a strong, professional and
+                            recognizable visual identity for
+                            your brand.
+
+                        </p>
+
+
+                        <a
+                            href="brand-design.html"
+                            class="service-link">
+
+                            Explore Brand Design
+                            →
+
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FEATURE / WORK SECTION
+        ========================== -->
+
+        <section
+            class="work section"
+            id="work">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="section-label">
+                        OUR APPROACH
+                    </span>
+
+
+                    <h2>
+
+                        Creativity meets
+                        <span>
+                            brand identity.
+                        </span>
+
+                    </h2>
+
+
+                    <p>
+
+                        Every brand begins with an idea.
+                        We transform that idea into a clear,
+                        memorable and purposeful visual identity.
+
+                    </p>
+
+                </div>
+
+
+                <div class="work-grid">
+
+
+                    <!-- CREATIVE VIDEO -->
+
+                    <div class="work-card large">
+
+                        <div class="work-image video-card">
+
+                            <video
+                                class="creative-video"
+                                autoplay
+                                muted
+                                loop
+                                playsinline
+                                preload="auto">
+
+                                <source
+                                    src="assets/videos/creative-video.mp4"
+                                    type="video/mp4">
+
+                                Your browser does not support
+                                the video tag.
+
+                            </video>
+
+
+                            <div class="work-overlay"></div>
+
+
+                            <div class="video-content">
+
+                                <span class="work-category">
+                                    BRAND DESIGN
+                                </span>
+
+
+                                <h3>
+                                    Ideas that stand out.
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- WORK CARD 01 -->
+
+                    <div class="work-card">
+
+                        <div class="work-content">
+
+                            <span class="work-number">
+                                01
+                            </span>
+
+
+                            <h3>
+                                Think Different
+                            </h3>
+
+
+                            <p>
+
+                                We transform simple ideas into
+                                unique brand concepts that stand out.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- WORK CARD 02 -->
+
+                    <div class="work-card">
+
+                        <div class="work-content">
+
+                            <span class="work-number">
+                                02
+                            </span>
+
+
+                            <h3>
+                                Design Better
+                            </h3>
+
+
+                            <p>
+
+                                Every visual element is designed
+                                with purpose, clarity and consistency.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- WORK CARD 03 -->
+
+                    <div class="work-card">
+
+                        <div class="work-content">
+
+                            <span class="work-number">
+                                03
+                            </span>
+
+
+                            <h3>
+                                Build Identity
+                            </h3>
+
+
+                            <p>
+
+                                We create visual systems that help
+                                brands become recognizable and memorable.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CTA SECTION
+        ========================== -->
+
+        <section class="cta section">
+
+            <div class="container">
+
+                <div class="cta-box">
+
+                    <span class="section-label">
+                        BUILD YOUR BRAND
+                    </span>
+
+
+                    <h2>
+
+                        Let's create something
+                        <span>
+                            extraordinary.
+                        </span>
+
+                    </h2>
+
+
+                    <p>
+
+                        Have a brand idea or creative challenge?
+                        Let's turn it into a professional visual identity
+                        people remember.
+
+                    </p>
+
+
+                    <a
+                        href="brand-design.html"
+                        class="btn btn-primary">
+
+                        Start Brand Design
+
+                        <span>
+                            ↗
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-main">
+
+
+                <!-- FOOTER BRAND -->
+
+                <div class="footer-brand">
+
+                    <a
+                        href="index.html"
+                        class="logo">
+
+                        <span class="logo-mark">
+                            P
+                        </span>
+
+
+                        <span class="logo-text">
+
+                            Pixel<span>
+                                Studio
+                            </span>
+
+                        </span>
+
+                    </a>
+
+
+                    <p>
+
+                        Creative Brand Design Solutions
+                        for modern businesses and creators.
+
+                    </p>
+
+                </div>
+
+
+                <!-- FOOTER LINKS -->
+
+                <div class="footer-links">
+
+
+                    <!-- EXPLORE -->
+
+                    <div>
+
+                        <h4>
+                            Explore
+                        </h4>
+
+
+                        <a href="index.html">
+                            Home
+                        </a>
+
+
+                        <a href="about.html">
+                            About
+                        </a>
+
+
+                        <a href="#services">
+                            Brand Design
+                        </a>
+
+
+                        <a href="#work">
+                            Our Work
+                        </a>
+
+                    </div>
+
+
+                    <!-- CONNECT -->
+
+                    <div>
+
+                        <h4>
+                            Connect
+                        </h4>
+
+
+                        <a href="contact.html">
+                            Contact
+                        </a>
+
+
+                        <a href="#">
+                            Instagram
+                        </a>
+
+
+                        <a href="#">
+                            LinkedIn
+                        </a>
+
+
+                        <a href="#">
+                            Email
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FOOTER BOTTOM -->
+
+            <div class="footer-bottom">
+
+                <p>
+
+                    © 2026 PixelStudio.
+                    All Rights Reserved.
+
+                </p>
+
+
+                <p>
+
+                    Designed & Built with Creativity.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Main JavaScript -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

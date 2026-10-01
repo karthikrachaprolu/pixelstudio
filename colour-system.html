@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Colour System | PixelStudio</title>
+    <meta name="description" content="Build a complete brand colour system with PixelStudio: primary, secondary, accent and neutral colours, light and dark variations, colour codes and usage rules.">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/colour-system.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <a href="index.html" class="brand">
+        <span class="brand-icon">P</span>
+        <span class="brand-name">Pixel<span>Studio</span></span>
+    </a>
+
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#services" class="active">Services</a>
+        <a href="index.html#work">Our Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀</button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="designer-hero">
+
+    <div class="eyebrow">
+        <span></span>
+        PIXELSTUDIO / COLOUR SYSTEM
+    </div>
+
+    <h1>
+        Define how your brand
+        <span>uses colour.</span>
+    </h1>
+
+    <p>
+        Pick one primary colour and generate a full system: secondary and
+        accent colours, neutrals, light and dark variations, colour codes
+        and usage rules you can hand straight to a team.
+    </p>
+
+</section>
+
+
+<!-- ================= BUILDER ================= -->
+
+<main class="designer">
+
+    <!-- LEFT CONTROLS -->
+
+    <aside class="controls">
+
+        <div class="control-header">
+            <span class="section-label">01 / CUSTOMIZE</span>
+            <h2>Colour Settings</h2>
+        </div>
+
+        <div class="control-group">
+            <label for="brandName">Brand Name</label>
+            <input type="text" id="brandName" value="PixelStudio">
+        </div>
+
+        <div class="control-group">
+            <label for="primaryColor">Primary Colour</label>
+            <div class="hex-row">
+                <input type="color" id="primaryColor" value="#FF4D0F">
+                <input type="text" id="primaryHex" value="#FF4D0F" maxlength="7" spellcheck="false" aria-label="Primary colour HEX">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label for="harmony">Colour Harmony</label>
+            <select id="harmony">
+                <option value="analogous">Analogous (calm, close hues)</option>
+                <option value="complementary">Complementary (high contrast)</option>
+                <option value="triadic">Triadic (playful, balanced)</option>
+                <option value="split">Split complementary (bold, softer)</option>
+            </select>
+        </div>
+
+        <div class="control-group">
+            <label for="neutrals">Neutral Colours</label>
+            <select id="neutrals">
+                <option value="tinted">Tinted with brand colour</option>
+                <option value="pure">Pure grays</option>
+            </select>
+        </div>
+
+        <div class="btn-row">
+            <button class="ghost-btn" id="randomBtn" type="button">Surprise me</button>
+            <button class="ghost-btn" id="copyCss" type="button">Copy CSS</button>
+        </div>
+
+        <button id="downloadPalette" class="download-btn" type="button">
+            Download Palette PNG
+            <span>↓</span>
+        </button>
+
+    </aside>
+
+
+    <!-- RIGHT OUTPUT -->
+
+    <section class="preview-area" id="output">
+
+        <div class="preview-header">
+            <div>
+                <span class="section-label">02 / YOUR SYSTEM</span>
+                <h2>Colour Palette</h2>
+            </div>
+            <span id="previewStatus">Analogous harmony</span>
+        </div>
+
+        <!-- Primary / Secondary / Accent / Neutral + codes -->
+        <div id="paletteGroups"></div>
+
+        <!-- Light / Dark -->
+        <div class="block">
+            <h3>Light / Dark Variations</h3>
+            <p class="hint">The same palette applied to a light and a dark interface.</p>
+            <div class="variations" id="variations"></div>
+        </div>
+
+        <!-- Usage rules -->
+        <div class="block">
+            <h3>Usage Rules</h3>
+            <p class="hint">How much of each colour to use, and where.</p>
+
+            <div class="proportion" id="proportion"></div>
+            <ul class="rules" id="rules"></ul>
+
+            <div class="contrast-list" id="contrast"></div>
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="designer-cta">
+
+    <span class="section-label">NEED A COMPLETE BRAND IDENTITY?</span>
+
+    <h2>
+        Turn your palette into a
+        <span>complete brand system.</span>
+    </h2>
+
+    <a href="contact.html" class="cta-btn">
+        Talk to PixelStudio
+        <span>→</span>
+    </a>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-brand">
+        <a href="index.html" class="brand">
+            <span class="brand-icon">P</span>
+            <span class="brand-name">Pixel<span>Studio</span></span>
+        </a>
+        <p>Integrated digital creative solutions for modern brands.</p>
+    </div>
+
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-copy">© 2026 PixelStudio. All rights reserved.</div>
+
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/colour-system.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UI / UX Design | PixelStudio</title>
+
+    <meta name="description"
+        content="PixelStudio UI and UX Design services for modern, intuitive and engaging digital experiences.">
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* =========================================
+           UI / UX DESIGN PAGE
+        ========================================= */
+
+        .service-hero {
+            position: relative;
+            min-height: 75vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background: #0A0A0A;
+        }
+
+        .service-hero-bg {
+            position: absolute;
+            inset: 0;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(10, 10, 10, 0.96) 0%,
+                    rgba(10, 10, 10, 0.78) 50%,
+                    rgba(10, 10, 10, 0.35) 100%
+                ),
+                url("assets/images/hero-2.jpg");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .service-hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 850px;
+            padding-top: 120px;
+            padding-bottom: 90px;
+        }
+
+        .service-number-large {
+            display: inline-block;
+            margin-bottom: 20px;
+
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: #FF4D0F;
+        }
+
+        .service-hero h1 {
+            margin: 0 0 25px;
+
+            font-family: "Space Grotesk", sans-serif;
+            font-size: clamp(55px, 8vw, 105px);
+            line-height: 0.95;
+            letter-spacing: -5px;
+        }
+
+        .service-hero h1 span {
+            color: #FF4D0F;
+        }
+
+        .service-hero p {
+            max-width: 680px;
+            margin-bottom: 35px;
+
+            color: #D0D0D0;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        /* =========================================
+           INTRO
+        ========================================= */
+
+        .service-intro {
+            padding: 120px 0;
+            background: #0A0A0A;
+        }
+
+        .service-intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: start;
+        }
+
+        .service-intro h2 {
+            margin: 0;
+
+            font-family: "Space Grotesk", sans-serif;
+            font-size: clamp(40px, 5vw, 65px);
+            line-height: 1;
+            letter-spacing: -3px;
+        }
+
+        .service-intro h2 span {
+            color: #FF4D0F;
+        }
+
+        .service-intro-text p {
+            margin: 0;
+
+            color: #BDBDBD;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        /* =========================================
+           FEATURES
+        ========================================= */
+
+        .service-features {
+            padding: 110px 0;
+            background: #0A0A0A;
+        }
+
+        .features-heading {
+            max-width: 750px;
+            margin-bottom: 55px;
+        }
+
+        .features-heading h2 {
+            margin: 15px 0 20px;
+
+            font-family: "Space Grotesk", sans-serif;
+            font-size: clamp(40px, 5vw, 65px);
+            line-height: 1;
+            letter-spacing: -3px;
+        }
+
+        .features-heading h2 span {
+            color: #FF4D0F;
+        }
+
+        .features-heading p {
+            color: #BDBDBD;
+            line-height: 1.7;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .feature-card {
+            min-height: 280px;
+            padding: 32px;
+
+            background: #1C1C1C;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 18px;
+
+            transition:
+                transform 0.3s ease,
+                border-color 0.3s ease,
+                background 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            border-color: #FF4D0F;
+            background: #202020;
+        }
+
+        .feature-number {
+            display: block;
+            margin-bottom: 45px;
+
+            color: #FF4D0F;
+            font-family: "Space Grotesk", sans-serif;
+            font-weight: 700;
+        }
+
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 25px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border: 1px solid rgba(255, 77, 15, 0.4);
+            border-radius: 12px;
+
+            color: #FF4D0F;
+            font-size: 22px;
+        }
+
+        .feature-card h3 {
+            margin: 0 0 12px;
+
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 21px;
+        }
+
+        .feature-card p {
+            margin: 0;
+
+            color: #AFAFAF;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        /* =========================================
+           PROCESS
+        ========================================= */
+
+        .design-process {
+            padding: 110px 0;
+            background: #111111;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .process-card {
+            padding: 35px 25px;
+            border-top: 1px solid rgba(255, 77, 15, 0.5);
+        }
+
+        .process-card span {
+            color: #FF4D0F;
+            font-family: "Space Grotesk", sans-serif;
+            font-weight: 700;
+        }
+
+        .process-card h3 {
+            margin: 35px 0 15px;
+
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 22px;
+        }
+
+        .process-card p {
+            margin: 0;
+
+            color: #AFAFAF;
+            line-height: 1.7;
+            font-size: 14px;
+        }
+
+        /* =========================================
+           DELIVERABLES
+        ========================================= */
+
+        .deliverables {
+            padding: 110px 0;
+            background: #0A0A0A;
+        }
+
+        .deliverables-box {
+            padding: 60px;
+
+            border: 1px solid rgba(255, 77, 15, 0.35);
+            border-radius: 24px;
+
+            background: #151515;
+        }
+
+        .deliverables-box h2 {
+            margin: 15px 0 35px;
+
+            font-family: "Space Grotesk", sans-serif;
+            font-size: clamp(38px, 5vw, 60px);
+            line-height: 1;
+            letter-spacing: -3px;
+        }
+
+        .deliverables-box h2 span {
+            color: #FF4D0F;
+        }
+
+        .deliverables-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .deliverable-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            padding: 16px 0;
+
+            color: #D5D5D5;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .deliverable-item::before {
+            content: "✓";
+            color: #FF4D0F;
+            font-weight: 700;
+        }
+
+        /* =========================================
+           CTA
+        ========================================= */
+
+        .service-cta {
+            padding: 120px 0;
+            text-align: center;
+            background: #0A0A0A;
+        }
+
+        .service-cta h2 {
+            max-width: 850px;
+            margin: 15px auto 25px;
+
+            font-family: "Space Grotesk", sans-serif;
+            font-size: clamp(45px, 6vw, 80px);
+            line-height: 0.98;
+            letter-spacing: -4px;
+        }
+
+        .service-cta h2 span {
+            color: #FF4D0F;
+        }
+
+        .service-cta p {
+            max-width: 600px;
+            margin: 0 auto 35px;
+
+            color: #AFAFAF;
+            line-height: 1.7;
+        }
+
+        /* =========================================
+           LIGHT MODE
+        ========================================= */
+
+        body.light-mode .service-intro,
+        body.light-mode .service-features,
+        body.light-mode .deliverables,
+        body.light-mode .service-cta {
+            background: #F5F5F5;
+        }
+
+        body.light-mode .design-process {
+            background: #EAEAEA;
+        }
+
+        body.light-mode .feature-card {
+            background: #FFFFFF;
+            border-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body.light-mode .feature-card:hover {
+            background: #FFFFFF;
+        }
+
+        body.light-mode .feature-card p,
+        body.light-mode .process-card p,
+        body.light-mode .service-intro-text p,
+        body.light-mode .features-heading p,
+        body.light-mode .deliverable-item,
+        body.light-mode .service-cta p {
+            color: #555555;
+        }
+
+        body.light-mode .deliverables-box {
+            background: #FFFFFF;
+        }
+
+        /* =========================================
+           RESPONSIVE
+        ========================================= */
+
+        @media (max-width: 1000px) {
+
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .process-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        @media (max-width: 768px) {
+
+            .service-hero-content {
+                padding-top: 130px;
+            }
+
+            .service-intro-grid {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+            .features-grid,
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .deliverables-list {
+                grid-template-columns: 1fr;
+            }
+
+            .deliverables-box {
+                padding: 35px 25px;
+            }
+
+        }
+
+        @media (max-width: 480px) {
+
+            .service-hero h1 {
+                letter-spacing: -3px;
+            }
+
+            .service-hero p {
+                font-size: 15px;
+            }
+
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
+    <header class="header" id="header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-mark">P</span>
+                <span class="logo-text">
+                    Pixel<span>Studio</span>
+                </span>
+            </a>
+
+
+            <nav class="navbar" id="navbar">
+
+                <a href="index.html" class="nav-link">
+                    Home
+                </a>
+
+                <a href="index.html#services" class="nav-link active">
+                    Services
+                </a>
+
+                <a href="index.html#work" class="nav-link">
+                    Our Work
+                </a>
+
+                <a href="about.html" class="nav-link">
+                    About
+                </a>
+
+                <a href="contact.html" class="nav-link">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <div class="nav-actions">
+
+                <button
+                    class="theme-toggle"
+                    id="themeToggle"
+                    aria-label="Toggle dark and light mode">
+
+                    <span class="theme-icon" id="themeIcon">
+                        ☀
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Open navigation menu">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================================
+             HERO
+        ========================================== -->
+
+        <section class="service-hero">
+
+            <div class="service-hero-bg"></div>
+
+            <div class="container">
+
+                <div class="service-hero-content">
+
+                    <span class="service-number-large">
+                        02 / UI / UX DESIGN
+                    </span>
+
+                    <h1>
+                        Design digital
+                        <span>experiences people love.</span>
+                    </h1>
+
+                    <p>
+                        We design intuitive interfaces and meaningful user
+                        experiences that make digital products easier,
+                        clearer and more enjoyable to use.
+                    </p>
+
+                    <a href="contact.html" class="btn btn-primary">
+                        Start a UI / UX Project
+                        <span>↗</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             INTRO
+        ========================================== -->
+
+        <section class="service-intro">
+
+            <div class="container">
+
+                <div class="service-intro-grid">
+
+                    <div>
+
+                        <span class="section-label">
+                            UI / UX DESIGN
+                        </span>
+
+                        <h2>
+                            Beautiful interfaces.
+                            <span>Better experiences.</span>
+                        </h2>
+
+                    </div>
+
+
+                    <div class="service-intro-text">
+
+                        <p>
+                            Great digital products should not only look good.
+                            They should feel natural, simple and easy to use.
+                            Our UI / UX process combines research, structure
+                            and visual design to create meaningful experiences.
+                        </p>
+
+                        <br>
+
+                        <p>
+                            From websites and landing pages to dashboards and
+                            digital products, we design interfaces around the
+                            people who use them.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             FEATURES
+        ========================================== -->
+
+        <section class="service-features">
+
+            <div class="container">
+
+                <div class="features-heading">
+
+                    <span class="section-label">
+                        WHAT WE CREATE
+                    </span>
+
+                    <h2>
+                        From research to
+                        <span>interface.</span>
+                    </h2>
+
+                    <p>
+                        Our UI / UX design service covers the complete design
+                        process required to create clear and engaging digital
+                        experiences.
+                    </p>
+
+                </div>
+
+
+                <div class="features-grid">
+
+                    <!-- 01 -->
+
+                    <article class="feature-card">
+
+                        <span class="feature-number">
+                            01
+                        </span>
+
+                        <div class="feature-icon">
+                            ◎
+                        </div>
+
+                        <h3>
+                            UX Research
+                        </h3>
+
+                        <p>
+                            Understand users, their needs, goals and problems
+                            before designing the experience.
+                        </p>
+
+                    </article>
+
+
+                    <!-- 02 -->
+
+                    <article class="feature-card">
+
+                        <span class="feature-number">
+                            02
+                        </span>
+
+                        <div class="feature-icon">
+                            ◇
+                        </div>
+
+                        <h3>
+                            User Flows
+                        </h3>
+
+                        <p>
+                            Map clear user journeys that help people move
+                            through the product naturally.
+                        </p>
+
+                    </article>
+
+
+                    <!-- 03 -->
+
+                    <article class="feature-card">
+
+                        <span class="feature-number">
+                            03
+                        </span>
+
+                        <div class="feature-icon">
+                            ▣
+                        </div>
+
+                        <h3>
+                            Wireframing
+                        </h3>
+
+                        <p>
+                            Create structured layouts that establish content
+                            hierarchy and functionality.
+                        </p>
+
+                    </article>
+
+
+                    <!-- 04 -->
+
+                    <article class="feature-card">
+
+                        <span class="feature-number">
+                            04
+                        </span>
+
+                        <div class="feature-icon">
+                            ✦
+                        </div>
+
+                        <h3>
+                            UI Design
+                        </h3>
+
+                        <p>
+                            Transform concepts into polished, modern and
+                            visually consistent interfaces.
+                        </p>
+
+                    </article>
+
+
+                    <!-- 05 -->
+
+                    <article class="feature-card">
+
+                        <span class="feature-number">
+                            05
+                        </span>
+
+                        <div class="feature-icon">
+                            ◈
+                        </div>
+
+                        <h3>
+                            Prototyping
+                        </h3>
+
+                        <p>
+                            Build interactive prototypes to demonstrate how
+                            screens and interactions work together.
+                        </p>
+
+                    </article>
+
+
+                    <!-- 06 -->
+
+                    <article class="feature-card">
+
+                        <span class="feature-number">
+                            06
+                        </span>
+
+                        <div class="feature-icon">
+                            A
+                        </div>
+
+                        <h3>
+                            Design Systems
+                        </h3>
+
+                        <p>
+                            Establish reusable components, typography,
+                            spacing and visual rules for consistency.
+                        </p>
+
+                    </article>
+
+
+                    <!-- 07 -->
+
+                    <article class="feature-card">
+
+                        <span class="feature-number">
+                            07
+                        </span>
+
+                        <div class="feature-icon">
+                            ↗
+                        </div>
+
+                        <h3>
+                            Responsive Design
+                        </h3>
+
+                        <p>
+                            Create experiences that adapt smoothly across
+                            desktop, tablet and mobile devices.
+                        </p>
+
+                    </article>
+
+
+                    <!-- 08 -->
+
+                    <article class="feature-card">
+
+                        <span class="feature-number">
+                            08
+                        </span>
+
+                        <div class="feature-icon">
+                            ✓
+                        </div>
+
+                        <h3>
+                            Usability Testing
+                        </h3>
+
+                        <p>
+                            Evaluate the experience and identify opportunities
+                            to improve clarity and usability.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             DESIGN PROCESS
+        ========================================== -->
+
+        <section class="design-process">
+
+            <div class="container">
+
+                <div class="features-heading">
+
+                    <span class="section-label">
+                        OUR PROCESS
+                    </span>
+
+                    <h2>
+                        Think. Design.
+                        <span>Improve.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="process-grid">
+
+                    <div class="process-card">
+
+                        <span>01</span>
+
+                        <h3>
+                            Discover
+                        </h3>
+
+                        <p>
+                            Understand the product, audience, goals and
+                            problems that need to be solved.
+                        </p>
+
+                    </div>
+
+
+                    <div class="process-card">
+
+                        <span>02</span>
+
+                        <h3>
+                            Structure
+                        </h3>
+
+                        <p>
+                            Organize content, information architecture and
+                            user flows into a clear experience.
+                        </p>
+
+                    </div>
+
+
+                    <div class="process-card">
+
+                        <span>03</span>
+
+                        <h3>
+                            Design
+                        </h3>
+
+                        <p>
+                            Create polished interfaces, components and
+                            interactions that bring the experience to life.
+                        </p>
+
+                    </div>
+
+
+                    <div class="process-card">
+
+                        <span>04</span>
+
+                        <h3>
+                            Refine
+                        </h3>
+
+                        <p>
+                            Test, review and improve the design to make the
+                            final experience clearer and easier to use.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             DELIVERABLES
+        ========================================== -->
+
+        <section class="deliverables">
+
+            <div class="container">
+
+                <div class="deliverables-box">
+
+                    <span class="section-label">
+                        PROJECT DELIVERABLES
+                    </span>
+
+                    <h2>
+                        What you
+                        <span>receive.</span>
+                    </h2>
+
+
+                    <div class="deliverables-list">
+
+                        <div class="deliverable-item">
+                            UX Research
+                        </div>
+
+                        <div class="deliverable-item">
+                            User Personas
+                        </div>
+
+                        <div class="deliverable-item">
+                            User Flows
+                        </div>
+
+                        <div class="deliverable-item">
+                            Wireframes
+                        </div>
+
+                        <div class="deliverable-item">
+                            High-Fidelity UI
+                        </div>
+
+                        <div class="deliverable-item">
+                            Interactive Prototype
+                        </div>
+
+                        <div class="deliverable-item">
+                            Design System
+                        </div>
+
+                        <div class="deliverable-item">
+                            Responsive Screens
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             CTA
+        ========================================== -->
+
+        <section class="service-cta">
+
+            <div class="container">
+
+                <span class="section-label">
+                    HAVE A DIGITAL PRODUCT?
+                </span>
+
+                <h2>
+                    Let's design an experience
+                    <span>people enjoy.</span>
+                </h2>
+
+                <p>
+                    Have a website, application or digital product idea?
+                    Let's turn it into a clear and engaging experience.
+                </p>
+
+                <a href="contact.html" class="btn btn-primary">
+                    Start a Project
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-main">
+
+                <div class="footer-brand">
+
+                    <a href="index.html" class="logo">
+
+                        <span class="logo-mark">
+                            P
+                        </span>
+
+                        <span class="logo-text">
+                            Pixel<span>Studio</span>
+                        </span>
+
+                    </a>
+
+                    <p>
+                        Integrated Digital Creative Solutions Platform.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <div>
+
+                        <h4>
+                            Explore
+                        </h4>
+
+                        <a href="index.html">
+                            Home
+                        </a>
+
+                        <a href="about.html">
+                            About
+                        </a>
+
+                        <a href="index.html#services">
+                            Services
+                        </a>
+
+                        <a href="index.html#work">
+                            Our Work
+                        </a>
+
+                    </div>
+
+
+                    <div>
+
+                        <h4>
+                            Services
+                        </h4>
+
+                        <a href="brand-design.html">
+                            Brand Design
+                        </a>
+
+                        <a href="ui-ux-design.html">
+                            UI / UX Design
+                        </a>
+
+                        <a href="contact.html">
+                            Digital Marketing
+                        </a>
+
+                        <a href="contact.html">
+                            Creative Content
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 PixelStudio. All Rights Reserved.
+                </p>
+
+                <p>
+                    Designed & Built with Creativity.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Main JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,619 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Inter, Arial, sans-serif;
+    background: #0A0A0A;
+    color: #FFFFFF;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    height: 80px;
+    padding: 0 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(10, 10, 10, 0.94);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(15px);
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #FF4D0F;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 32px;
+}
+
+.navbar nav a {
+    color: #BDBDBD;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #FF4D0F;
+}
+
+.theme-btn {
+    width: 42px;
+    height: 42px;
+
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 50%;
+
+    background: #181818;
+    color: white;
+
+    cursor: pointer;
+    font-size: 17px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 78vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 100px 8%;
+
+    background:
+        radial-gradient(
+            circle at 80% 40%,
+            rgba(255,77,15,0.15),
+            transparent 35%
+        ),
+        #0A0A0A;
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.eyebrow,
+.section-heading > span,
+.section-title > span {
+    color: #FF4D0F;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    margin: 25px 0;
+
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(55px, 8vw, 110px);
+    line-height: 0.95;
+    letter-spacing: -5px;
+}
+
+.hero h1 span {
+    color: #FF4D0F;
+    display: block;
+}
+
+.hero p {
+    max-width: 700px;
+
+    color: #BDBDBD;
+    font-size: 19px;
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+}
+
+.hero-btn,
+.cta a {
+    display: inline-block;
+
+    padding: 15px 24px;
+
+    background: #FF4D0F;
+    color: white;
+
+    text-decoration: none;
+    font-weight: 700;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.hero-btn:hover,
+.cta a:hover {
+    transform: translateY(-3px);
+    background: #ff642d;
+}
+
+
+/* =========================
+   OVERVIEW
+========================= */
+
+.overview {
+    padding: 110px 8%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+
+    background: #111111;
+}
+
+.section-title h2,
+.section-heading h2 {
+    margin-top: 18px;
+
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(40px, 5vw, 65px);
+    line-height: 1;
+    letter-spacing: -3px;
+}
+
+.section-title strong,
+.section-heading strong {
+    color: #FF4D0F;
+}
+
+.overview-text {
+    color: #AFAFAF;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.overview-text p + p {
+    margin-top: 25px;
+}
+
+
+/* =========================
+   BUILDER
+========================= */
+
+.builder {
+    padding: 120px 8%;
+}
+
+.section-heading {
+    max-width: 800px;
+    margin-bottom: 60px;
+}
+
+.builder-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.tool-card {
+    padding: 35px;
+
+    background: #1A1A1A;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 18px;
+
+    transition: 0.3s;
+}
+
+.tool-card:hover {
+    transform: translateY(-6px);
+    border-color: #FF4D0F;
+}
+
+.tool-number {
+    color: #FF4D0F;
+    font-weight: 700;
+}
+
+.tool-icon {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 25px 0;
+
+    border: 1px solid rgba(255,77,15,0.5);
+    border-radius: 12px;
+
+    color: #FF4D0F;
+    font-size: 22px;
+}
+
+.tool-card h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+
+.tool-card p {
+    color: #AFAFAF;
+    margin-bottom: 25px;
+}
+
+.tool-card ul {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.tool-card li {
+    color: #D5D5D5;
+    margin: 9px 0;
+}
+
+.tool-card li::before {
+    content: "✓";
+    color: #FF4D0F;
+    margin-right: 10px;
+}
+
+.tool-btn {
+    border: 0;
+    background: transparent;
+
+    color: #FF4D0F;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.tool-btn:hover {
+    transform: translateX(5px);
+}
+
+
+/* =========================
+   PLATFORMS
+========================= */
+
+.platforms {
+    padding: 120px 8%;
+    background: #111111;
+}
+
+.platform-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.platform-card {
+    padding: 30px;
+
+    min-height: 190px;
+
+    border: 1px solid rgba(255,255,255,0.1);
+    background: #181818;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.platform-card:hover {
+    border-color: #FF4D0F;
+    transform: translateY(-5px);
+}
+
+.platform-card span {
+    color: #FF4D0F;
+}
+
+.platform-card h3 {
+    margin: 30px 0 10px;
+
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 25px;
+}
+
+.platform-card p {
+    color: #AFAFAF;
+}
+
+
+/* =========================
+   CONTENT SYSTEM
+========================= */
+
+.content-system {
+    padding: 120px 8%;
+}
+
+.content-list {
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.content-row {
+    display: grid;
+    grid-template-columns: 80px 1fr 1.5fr;
+    align-items: center;
+
+    padding: 28px 0;
+
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.content-row span {
+    color: #FF4D0F;
+    font-weight: 700;
+}
+
+.content-row h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 23px;
+}
+
+.content-row p {
+    color: #AFAFAF;
+}
+
+
+/* =========================
+   PROCESS
+========================= */
+
+.process {
+    padding: 120px 8%;
+    background: #111111;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.process-card {
+    padding: 30px;
+
+    border-top: 2px solid #FF4D0F;
+}
+
+.process-card span {
+    color: #FF4D0F;
+    font-weight: 700;
+}
+
+.process-card h3 {
+    margin: 25px 0 10px;
+
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 24px;
+}
+
+.process-card p {
+    color: #AFAFAF;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+    padding: 140px 8%;
+    text-align: center;
+}
+
+.cta > span {
+    color: #FF4D0F;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.cta h2 {
+    max-width: 900px;
+    margin: 25px auto 35px;
+
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(45px, 6vw, 80px);
+    line-height: 1;
+    letter-spacing: -4px;
+}
+
+.cta h2 strong {
+    color: #FF4D0F;
+    display: block;
+}
+
+
+/* =========================
+   TOAST
+========================= */
+
+.toast {
+    position: fixed;
+
+    bottom: 30px;
+    left: 50%;
+
+    transform: translate(-50%, 100px);
+
+    padding: 14px 22px;
+
+    background: #FF4D0F;
+    color: white;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    opacity: 0;
+
+    transition: 0.3s;
+
+    z-index: 2000;
+}
+
+.toast.show {
+    transform: translate(-50%, 0);
+    opacity: 1;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 30px 8%;
+
+    text-align: center;
+
+    color: #777;
+
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+
+/* =========================
+   LIGHT MODE
+========================= */
+
+body.light-mode {
+    background: #F5F5F5;
+    color: #111111;
+}
+
+body.light-mode .navbar {
+    background: rgba(245,245,245,0.94);
+}
+
+body.light-mode .navbar nav a,
+body.light-mode .logo {
+    color: #111111;
+}
+
+body.light-mode .hero,
+body.light-mode .builder,
+body.light-mode .content-system,
+body.light-mode .cta {
+    background: #F5F5F5;
+}
+
+body.light-mode .overview,
+body.light-mode .platforms,
+body.light-mode .process {
+    background: #EAEAEA;
+}
+
+body.light-mode .tool-card,
+body.light-mode .platform-card {
+    background: white;
+    color: #111;
+}
+
+body.light-mode .tool-card p,
+body.light-mode .platform-card p,
+body.light-mode .content-row p,
+body.light-mode .process-card p,
+body.light-mode .overview-text {
+    color: #555;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .navbar nav {
+        display: none;
+    }
+
+    .overview {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .builder-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .platform-grid,
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content-row {
+        grid-template-columns: 50px 1fr;
+        gap: 10px;
+    }
+
+    .content-row p {
+        grid-column: 2;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .hero {
+        padding: 80px 6%;
+    }
+
+    .builder,
+    .platforms,
+    .process,
+    .content-system,
+    .cta,
+    .overview {
+        padding: 80px 6%;
+    }
+
+    .platform-grid,
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        letter-spacing: -3px;
+    }
+}

@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brand Design | PixelStudio</title>
+
+    <meta name="description"
+        content="PixelStudio Brand Design services including brand strategy, logo design, visual identity, typography and brand guidelines.">
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        /* =====================================================
+           BRAND DESIGN PAGE
+        ===================================================== */
+
+        .service-hero {
+            position: relative;
+            min-height: 75vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background: #0A0A0A;
+        }
+
+        .service-hero-bg {
+            position: absolute;
+            inset: 0;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(10, 10, 10, 0.96) 0%,
+                    rgba(10, 10, 10, 0.78) 50%,
+                    rgba(10, 10, 10, 0.35) 100%
+                ),
+                url("assets/images/hero-3.jpg");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .service-hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 850px;
+            padding-top: 120px;
+            padding-bottom: 90px;
+        }
+
+        .service-number-large {
+            display: inline-block;
+            margin-bottom: 20px;
+
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+
+            color: #FF4D0F;
+        }
+
+        .service-hero h1 {
+            margin: 0 0 25px;
+
+            font-family: "Space Grotesk", sans-serif;
+            font-size: clamp(55px, 8vw, 105px);
+            line-height: 0.95;
+            letter-spacing: -5px;
+        }
+
+        .service-hero h1 span {
+            color: #FF4D0F;
+        }
+
+        .service-hero p {
+            max-width: 680px;
+            margin-bottom: 35px;
+
+            color: #D0D0D0;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+
+        /* =====================================================
+           SERVICE INTRO
+        ===================================================== */
+
+        .service-intro {
+            padding: 120px 0;
+            background: #0A0A0A;
+        }
+
+        .service-intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: start;
+        }
+
+        .service-intro h2 {
+            margin: 0;
+
+            font-family: "Space Grotesk", sans-serif;
+            font-size: clamp(40px, 5vw, 65px);
+            line-height: 1;
+            letter-spacing: -3px;
+        }
+
+        .service-intro h2 span {
+            color: #FF4D0F;
+        }
+
+        .service-intro-text p {
+            margin: 0;
+
+            color: #BDBDBD;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+
+        /* =====================================================
+           FEATURES
+        ===================================================== */
+
+        .service-features {
+            padding: 110px 0;
+            background: #0A0A0A;
+        }
+
+        .features-heading {
+            max-width: 750px;
+            margin-bottom: 55px;
+        }
+
+        .features-heading h2 {
+            margin: 15px 0 20px;
+
+            font-family: "Space Grotesk", sans-serif;
+            font-size: clamp(40px, 5vw, 65px);
+            line-height: 1;
+            letter-spacing: -3px;
+        }
+
+        .features-heading h2 span {
+            color: #FF4D0F;
+        }
+
+        .features-heading p {
+            color: #BDBDBD;
+            line-height: 1.7;
+        }
+
+
+       /* =====================================================
+   BRAND DESIGN FEATURE CARDS
+===================================================== */
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+}
+
+.feature-card {
+    min-width: 0;
+    padding: 35px;
+
+    background: #1C1C1C;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+
+    box-sizing: border-box;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+    border-color: #FF4D0F;
+    background: #202020;
+}
+
+.feature-number {
+    display: block;
+    margin-bottom: 25px;
+
+    color: #FF4D0F;
+
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.feature-icon {
+    width: 48px;
+    height: 48px;
+
+    margin-bottom: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255, 77, 15, 0.4);
+    border-radius: 12px;
+
+    color: #FF4D0F;
+    font-size: 22px;
+}
+
+.feature-card h3 {
+    margin: 0 0 12px;
+
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.feature-card > p {
+    margin: 0 0 22px;
+
+    color: #AFAFAF;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* FEATURE DETAILS */
+
+.feature-details {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.feature-details li {
+    position: relative;
+
+    padding-left: 24px;
+
+    color: #D5D5D5;
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.feature-details li::before {
+    content: "✓";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    color: #FF4D0F;
+
+    font-weight: 700;
+}
+
+
+/* LIGHT MODE */
+
+body.light-mode .feature-card {
+    background: #FFFFFF;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .feature-card:hover {
+    background: #FFFFFF;
+}
+
+body.light-mode .feature-card > p {
+    color: #555555;
+}
+
+body.light-mode .feature-details li {
+    color: #444444;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-card {
+        padding: 28px;
+    }
+}
+
+        /* =====================================================
+           PROCESS
+        ===================================================== */
+
+        .brand-process {
+            padding: 110px 0;
+            background: #111111;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        .process-card {
+            position: relative;
+            padding: 35px 25px;
+
+            border-top: 1px solid rgba(255, 77, 15, 0.5);
+        }
+
+        .process-card span {
+            color: #FF4D0F;
+
+            font-family: "Space Grotesk", sans-serif;
+            font-weight: 700;
+        }
+
+        .process-card h3 {
+            margin: 35px 0 15px;
+
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 22px;
+        }
+
+        .process-card p {
+            margin: 0;
+
+            color: #AFAFAF;
+            line-height: 1.7;
+            font-size: 14px;
+        }
+
+
+        /* =====================================================
+           DELIVERABLES
+        ===================================================== */
+
+        .deliverables {
+            padding: 110px 0;
+            background: #0A0A0A;
+        }
+
+        .deliverables-box {
+            padding: 60px;
+
+            border: 1px solid rgba(255, 77, 15, 0.35);
+            border-radius: 24px;
+
+            background: #151515;
+        }
+
+        .deliverables-box h2 {
+            margin: 15px 0 35px;
+
+            font-family: "Space Grotesk", sans-serif;
+            font-size: clamp(38px, 5vw, 60px);
+            line-height: 1;
+            letter-spacing: -3px;
+        }
+
+        .deliverables-box h2 span {
+            color: #FF4D0F;
+        }
+
+        .deliverables-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 15px;
+        }
+
+        .deliverable-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            padding: 16px 0;
+
+            color: #D5D5D5;
+
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .deliverable-item::before {
+            content: "✓";
+
+            color: #FF4D0F;
+            font-weight: 700;
+        }
+
+
+        /* =====================================================
+           CTA
+        ===================================================== */
+
+        .service-cta {
+            padding: 120px 0;
+
+            text-align: center;
+
+            background: #0A0A0A;
+        }
+
+        .service-cta h2 {
+            max-width: 850px;
+
+            margin: 15px auto 25px;
+
+            font-family: "Space Grotesk", sans-serif;
+            font-size: clamp(45px, 6vw, 80px);
+            line-height: 0.98;
+            letter-spacing: -4px;
+        }
+
+        .service-cta h2 span {
+            color: #FF4D0F;
+        }
+
+        .service-cta p {
+            max-width: 600px;
+
+            margin: 0 auto 35px;
+
+            color: #AFAFAF;
+            line-height: 1.7;
+        }
+
+
+        /* =====================================================
+           LIGHT MODE
+        ===================================================== */
+
+        body.light-mode .service-intro,
+        body.light-mode .service-features,
+        body.light-mode .deliverables,
+        body.light-mode .service-cta {
+            background: #F5F5F5;
+        }
+
+        body.light-mode .brand-process {
+            background: #EAEAEA;
+        }
+
+        body.light-mode .feature-card {
+            background: #FFFFFF;
+            border-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body.light-mode .feature-card:hover {
+            background: #FFFFFF;
+        }
+
+        body.light-mode .feature-card p,
+        body.light-mode .process-card p,
+        body.light-mode .service-intro-text p,
+        body.light-mode .features-heading p,
+        body.light-mode .deliverable-item,
+        body.light-mode .service-cta p {
+            color: #555555;
+        }
+
+        body.light-mode .deliverables-box {
+            background: #FFFFFF;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+
+        @media (max-width: 1100px) {
+
+            .features-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .process-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+
+        @media (max-width: 768px) {
+
+            .service-hero-content {
+                padding-top: 130px;
+            }
+
+            .service-intro-grid {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+            .features-grid,
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .deliverables-list {
+                grid-template-columns: 1fr;
+            }
+
+            .deliverables-box {
+                padding: 35px 25px;
+            }
+        }
+
+
+        @media (max-width: 480px) {
+
+            .service-hero h1 {
+                letter-spacing: -3px;
+            }
+
+            .service-hero p {
+                font-size: 15px;
+            }
+
+            .feature-card {
+                padding: 25px;
+            }
+        }
+
+            /* Clickable service card */
+        a.feature-link {
+            display: block;
+            color: inherit;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .feature-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 24px;
+            font-weight: 600;
+            color: #FF4D0F;
+            transition: gap 0.3s ease;
+        }
+
+        a.feature-link:hover .feature-cta {
+            gap: 14px;
+        }
+
+        a.feature-link:focus-visible {
+            outline: 2px solid #FF4D0F;
+            outline-offset: 4px;
+        }
+/* Colour System CTA */
+
+.open-service {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 25px;
+    color: #FF4D0F;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.open-service:hover {
+    color: #FFFFFF;
+    transform: translateX(4px);
+}
+    </style>
+
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header class="header" id="header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-mark">P</span>
+
+                <span class="logo-text">
+                    Pixel<span>Studio</span>
+                </span>
+
+            </a>
+
+
+            <nav class="navbar" id="navbar">
+
+                <a href="index.html" class="nav-link">
+                    Home
+                </a>
+
+                <a href="index.html#services" class="nav-link active">
+                    Services
+                </a>
+
+                <a href="index.html#work" class="nav-link">
+                    Our Work
+                </a>
+
+                <a href="about.html" class="nav-link">
+                    About
+                </a>
+
+                <a href="contact.html" class="nav-link">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <div class="nav-actions">
+
+                <button
+                    class="theme-toggle"
+                    id="themeToggle"
+                    aria-label="Toggle dark and light mode">
+
+                    <span class="theme-icon" id="themeIcon">
+                        ☀
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Open navigation menu">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- =====================================================
+             HERO
+        ====================================================== -->
+
+        <section class="service-hero">
+
+            <div class="service-hero-bg"></div>
+
+            <div class="container">
+
+                <div class="service-hero-content">
+
+                    <span class="service-number-large">
+                        01 / BRAND DESIGN
+                    </span>
+
+                    <h1>
+                        Build a brand
+                        <span>people remember.</span>
+                    </h1>
+
+                    <p>
+                        We create distinctive visual identities that give
+                        businesses a clear personality, consistent presence
+                        and memorable connection with their audience.
+                    </p>
+
+                    <a href="contact.html" class="btn btn-primary">
+                        Start a Brand Project
+                        <span>↗</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             INTRO
+        ====================================================== -->
+
+        <section class="service-intro">
+
+            <div class="container">
+
+                <div class="service-intro-grid">
+
+                    <div>
+
+                        <span class="section-label">
+                            BRAND DESIGN
+                        </span>
+
+                        <h2>
+                            More than a logo.
+                            <span>A complete identity.</span>
+                        </h2>
+
+                    </div>
+
+
+                    <div class="service-intro-text">
+
+                        <p>
+                            A strong brand is more than a logo or a color.
+                            It is the visual language that communicates who
+                            you are, what you represent and why people should
+                            remember you.
+                        </p>
+
+                        <br>
+
+                        <p>
+                            PixelStudio develops cohesive brand systems that
+                            can work across websites, social media, marketing
+                            materials and digital experiences.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             FEATURES
+        ====================================================== -->
+
+        <section class="service-features">
+
+            <div class="container">
+
+                <div class="features-heading">
+
+                    <span class="section-label">
+                        WHAT WE CREATE
+                    </span>
+
+                    <h2>
+                        Everything your brand
+                        <span>needs.</span>
+                    </h2>
+
+                    <p>
+                        Our brand design service covers the essential visual
+                        elements required to create a consistent and
+                        professional identity.
+                    </p>
+
+                </div>
+
+
+              <div class="features-grid">
+
+    <!-- 01 — LOGO DESIGN -->
+    <a href="logo-designer.html" class="feature-card feature-link" aria-label="Open the Logo Designer">
+        <span class="feature-number">
+            01
+        </span>
+
+        <div class="feature-icon">
+            ✦
+        </div>
+
+        <h3>
+            Logo Design
+        </h3>
+
+        <p>
+            Create a unique, professional logo for a business, creator,
+            brand, or project.
+        </p>
+
+        <ul class="feature-details">
+            <li>Custom logo concept</li>
+            <li>Typography / wordmark</li>
+            <li>Symbol or icon</li>
+            <li>Color palette</li>
+            <li>Light & dark versions</li>
+            <li>Social-media-ready logo</li>
+            <li>High-resolution export</li>
+            <li>Transparent-background version</li>
+        </ul>
+
+        <span class="feature-cta">Open Logo Designer <b>→</b></span>
+    </a>
+
+
+   <!-- 02 — COLOUR SYSTEM -->
+
+<article class="feature-card">
+
+    <span class="feature-number">
+        02
+    </span>
+
+    <div class="feature-icon">
+        ◉
+    </div>
+
+    <h3>
+        Colour System
+    </h3>
+
+    <p>
+        A structured set of colors that defines how a brand uses
+        color consistently across its visual identity.
+    </p>
+
+    <ul class="feature-details">
+        <li>Primary Colors — main brand colors</li>
+        <li>Secondary Colors — supporting colors</li>
+        <li>Accent Colors — highlights and calls-to-action</li>
+        <li>Neutral Colors — black, white, gray and backgrounds</li>
+        <li>Light / Dark Variations</li>
+        <li>Colour Codes — HEX, RGB, CMYK and HSL</li>
+        <li>Usage Rules — where and how each color should be used</li>
+    </ul>
+
+    <a href="colour-system.html" class="open-service">
+      
+      Open Colour System →
+    </a>
+
+</article>
+    <!-- 03 — SOCIAL BRANDING -->
+<article class="feature-card">
+
+    <span class="feature-number">
+        03
+    </span>
+
+    <div class="feature-icon">
+        ◎
+    </div>
+
+    <h3>
+        Social Branding
+    </h3>
+
+    <p>
+        Create a consistent brand identity across social-media
+        platforms and digital communication.
+    </p>
+
+    <ul class="feature-details">
+        <li>Profile & cover designs</li>
+        <li>Post and story templates</li>
+        <li>Captions, hashtags and brand messaging</li>
+        <li>Consistent logo, colors, fonts and visual style</li>
+        <li>Instagram, Facebook, YouTube and LinkedIn branding</li>
+        <li>Content style and posting strategy</li>
+        <li>Reels / short-video branding</li>
+        <li>Intro and outro designs</li>
+    </ul>
+
+    <!-- ADD THIS -->
+    <a href="social-branding.html" class="open-service">
+        Open Social Branding →
+    </a>
+
+</article>
+
+<!-- 04 — MARKETING MATERIALS -->
+<article class="feature-card">
+
+    <span class="feature-number">
+        04
+    </span>
+
+    <div class="feature-icon">
+        ↗
+    </div>
+
+    <h3>
+        Marketing Materials
+    </h3>
+
+    <p>
+        Design professional visuals that businesses can use to
+        promote their products, services or events.
+    </p>
+
+    <ul class="feature-details">
+        <li>Flyers & posters</li>
+        <li>Brochures</li>
+        <li>Business cards</li>
+        <li>Banners & advertisements</li>
+        <li>Social-media ads</li>
+        <li>Promotional cards</li>
+        <li>Product promotional designs</li>
+        <li>Website banners</li>
+    </ul>
+
+    <!-- ADD THIS -->
+    <a href="marketing-materials.html" class="open-service">
+        Open Marketing Materials →
+    </a>
+
+</article>
+</div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CREATIVE PROCESS
+        ====================================================== -->
+
+        <section class="brand-process">
+
+            <div class="container">
+
+                <div class="features-heading">
+
+                    <span class="section-label">
+                        OUR PROCESS
+                    </span>
+
+                    <h2>
+                        From idea to
+                        <span>identity.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="process-grid">
+
+
+                    <div class="process-card">
+
+                        <span>01</span>
+
+                        <h3>
+                            Discover
+                        </h3>
+
+                        <p>
+                            Understand your business, audience, goals and
+                            creative direction.
+                        </p>
+
+                    </div>
+
+
+                    <div class="process-card">
+
+                        <span>02</span>
+
+                        <h3>
+                            Define
+                        </h3>
+
+                        <p>
+                            Establish the visual direction, personality,
+                            typography and color approach.
+                        </p>
+
+                    </div>
+
+
+                    <div class="process-card">
+
+                        <span>03</span>
+
+                        <h3>
+                            Design
+                        </h3>
+
+                        <p>
+                            Create the logo, visual identity and supporting
+                            brand elements.
+                        </p>
+
+                    </div>
+
+
+                    <div class="process-card">
+
+                        <span>04</span>
+
+                        <h3>
+                            Deliver
+                        </h3>
+
+                        <p>
+                            Package the final identity system and guidelines
+                            for consistent real-world use.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             DELIVERABLES
+        ====================================================== -->
+
+        <section class="deliverables">
+
+            <div class="container">
+
+                <div class="deliverables-box">
+
+                    <span class="section-label">
+                        PROJECT DELIVERABLES
+                    </span>
+
+                    <h2>
+                        What you
+                        <span>receive.</span>
+                    </h2>
+
+
+                    <div class="deliverables-list">
+
+                        <div class="deliverable-item">
+                            Primary Logo
+                        </div>
+
+                        <div class="deliverable-item">
+                            Logo Variations
+                        </div>
+
+                        <div class="deliverable-item">
+                            Color Palette
+                        </div>
+
+                        <div class="deliverable-item">
+                            Typography System
+                        </div>
+
+                        <div class="deliverable-item">
+                            Visual Identity Elements
+                        </div>
+
+                        <div class="deliverable-item">
+                            Brand Guidelines
+                        </div>
+
+                        <div class="deliverable-item">
+                            Social Media Assets
+                        </div>
+
+                        <div class="deliverable-item">
+                            Marketing Templates
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CTA
+        ====================================================== -->
+
+        <section class="service-cta">
+
+            <div class="container">
+
+                <span class="section-label">
+                    READY TO BUILD YOUR BRAND?
+                </span>
+
+                <h2>
+                    Let's create an identity
+                    <span>worth remembering.</span>
+                </h2>
+
+                <p>
+                    Tell us about your idea and let's create a brand
+                    that communicates your vision with clarity.
+                </p>
+
+                <a href="contact.html" class="btn btn-primary">
+                    Start a Project
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-main">
+
+
+                <div class="footer-brand">
+
+                    <a href="index.html" class="logo">
+
+                        <span class="logo-mark">
+                            P
+                        </span>
+
+                        <span class="logo-text">
+                            Pixel<span>Studio</span>
+                        </span>
+
+                    </a>
+
+                    <p>
+                        Integrated Digital Creative Solutions Platform.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-links">
+
+
+                    <div>
+
+                        <h4>
+                            Explore
+                        </h4>
+
+                        <a href="index.html">
+                            Home
+                        </a>
+
+                        <a href="about.html">
+                            About
+                        </a>
+
+                        <a href="index.html#services">
+                            Services
+                        </a>
+
+                        <a href="index.html#work">
+                            Our Work
+                        </a>
+
+                    </div>
+
+
+                    <div>
+
+                        <h4>
+                            Services
+                        </h4>
+
+                        <a href="brand-design.html">
+                            Brand Design
+                        </a>
+
+                        <a href="#">
+                            UI / UX Design
+                        </a>
+
+                        <a href="#">
+                            Digital Marketing
+                        </a>
+
+                        <a href="#">
+                            Creative Content
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 PixelStudio. All Rights Reserved.
+                </p>
+
+                <p>
+                    Designed & Built with Creativity.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Main JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Banner Designer | PixelStudio</title>
+
+    <link rel="stylesheet" href="/css/banner-designer.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <a href="marketing-materials.html" class="logo">
+            Pixel<span>Studio</span>
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="brand-design.html" class="active">Services</a>
+            <a href="index.html">Our Work</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span class="tag">
+                PIXELSTUDIO / BANNER DESIGNER
+            </span>
+
+            <h1>
+                Create your
+                <span>Banner.</span>
+            </h1>
+
+            <p>
+                Design a professional promotional banner
+                using your own content and brand style.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- DESIGNER -->
+
+    <main class="designer">
+
+        <!-- LEFT SIDE - CONTROLS -->
+
+        <section class="controls">
+
+            <div class="section-title">
+                <span>01</span>
+                <h2>Banner Details</h2>
+            </div>
+
+
+            <!-- TITLE -->
+
+            <label>
+                Banner Title
+            </label>
+
+            <input
+                type="text"
+                id="bannerTitle"
+                placeholder="Enter banner title"
+                value="Grow Your Business"
+            >
+
+
+            <!-- DESCRIPTION -->
+
+            <label>
+                Description
+            </label>
+
+            <textarea
+                id="bannerDescription"
+                placeholder="Enter banner description"
+            >Professional digital solutions for your business.</textarea>
+
+
+            <!-- BUTTON -->
+
+            <label>
+                Button Text
+            </label>
+
+            <input
+                type="text"
+                id="buttonText"
+                placeholder="Example: Get Started"
+                value="Get Started"
+            >
+
+
+            <!-- BRAND -->
+
+            <label>
+                Brand Name
+            </label>
+
+            <input
+                type="text"
+                id="brandName"
+                placeholder="Your brand name"
+                value="PixelStudio"
+            >
+
+
+            <!-- BACKGROUND -->
+
+            <label>
+                Background Color
+            </label>
+
+            <input
+                type="color"
+                id="backgroundColor"
+                value="#181818"
+            >
+
+
+            <!-- ACCENT -->
+
+            <label>
+                Accent Color
+            </label>
+
+            <input
+                type="color"
+                id="accentColor"
+                value="#ff5a1f"
+            >
+
+
+            <!-- TEXT COLOR -->
+
+            <label>
+                Text Color
+            </label>
+
+            <input
+                type="color"
+                id="textColor"
+                value="#ffffff"
+            >
+
+
+            <!-- SIZE -->
+
+            <label>
+                Banner Size
+            </label>
+
+            <select id="bannerSize">
+
+                <option value="website">
+                    Website Banner
+                </option>
+
+                <option value="instagram">
+                    Instagram Post
+                </option>
+
+                <option value="story">
+                    Instagram Story
+                </option>
+
+                <option value="facebook">
+                    Facebook Banner
+                </option>
+
+            </select>
+
+
+            <button
+                class="generate-btn"
+                id="generateBtn"
+            >
+                Generate Banner →
+            </button>
+
+        </section>
+
+
+        <!-- RIGHT SIDE - PREVIEW -->
+
+        <section class="preview-section">
+
+            <div class="section-title">
+
+                <span>02</span>
+
+                <h2>
+                    Live Preview
+                </h2>
+
+            </div>
+
+
+            <div
+                class="banner-preview"
+                id="bannerPreview"
+            >
+
+                <div class="banner-content">
+
+                    <div
+                        class="brand"
+                        id="previewBrand"
+                    >
+                        PixelStudio
+                    </div>
+
+                    <h2
+                        id="previewTitle"
+                    >
+                        Grow Your Business
+                    </h2>
+
+                    <p
+                        id="previewDescription"
+                    >
+                        Professional digital solutions
+                        for your business.
+                    </p>
+
+                    <button
+                        class="preview-button"
+                        id="previewButton"
+                    >
+                        Get Started
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="preview-info">
+
+                <span>
+                    LIVE PREVIEW
+                </span>
+
+                <button
+                    id="downloadBtn"
+                    class="download-btn"
+                >
+                    Download Banner
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PROCESS -->
+
+    <section class="process">
+
+        <div class="section-title">
+
+            <span>03</span>
+
+            <h2>
+                Banner Design Process
+            </h2>
+
+        </div>
+
+
+        <div class="process-grid">
+
+            <div class="process-card">
+
+                <span>01</span>
+
+                <h3>
+                    Enter Details
+                </h3>
+
+                <p>
+                    Add your brand name, title,
+                    description and button text.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <span>02</span>
+
+                <h3>
+                    Customize
+                </h3>
+
+                <p>
+                    Select your background,
+                    accent and text colors.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <span>03</span>
+
+                <h3>
+                    Preview
+                </h3>
+
+                <p>
+                    See your banner design
+                    instantly in the preview area.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <span>04</span>
+
+                <h3>
+                    Download
+                </h3>
+
+                <p>
+                    Download your final banner
+                    when your design is ready.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 PixelStudio. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="js/banner-designer.js"></script>
+
+</body>
+
+</html>

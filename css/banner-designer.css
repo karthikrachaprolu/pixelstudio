@@ -1,0 +1,473 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #090909;
+    color: #ffffff;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    height: 80px;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #222;
+    background: #0b0b0b;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #ff5a1f;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 35px;
+}
+
+.navbar nav a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navbar nav a:hover,
+.navbar nav .active {
+    color: #ff5a1f;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    padding: 90px 8% 70px;
+    border-bottom: 1px solid #222;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.tag {
+    color: #ff5a1f;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    margin-top: 20px;
+    font-size: 64px;
+    line-height: 1.05;
+}
+
+.hero h1 span {
+    color: #ff5a1f;
+}
+
+.hero p {
+    margin-top: 25px;
+    color: #aaa;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   DESIGNER
+========================= */
+
+.designer {
+    width: 84%;
+    margin: 70px auto;
+
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 60px;
+}
+
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.section-title span {
+    color: #ff5a1f;
+    font-weight: bold;
+}
+
+.section-title h2 {
+    font-size: 26px;
+}
+
+
+/* =========================
+   CONTROLS
+========================= */
+
+.controls {
+    background: #151515;
+    border: 1px solid #292929;
+    border-radius: 18px;
+
+    padding: 30px;
+}
+
+.controls label {
+    display: block;
+
+    margin-top: 20px;
+    margin-bottom: 8px;
+
+    color: #aaa;
+    font-size: 14px;
+}
+
+.controls input,
+.controls textarea,
+.controls select {
+
+    width: 100%;
+
+    padding: 13px;
+
+    background: #0c0c0c;
+    color: white;
+
+    border: 1px solid #333;
+    border-radius: 8px;
+
+    outline: none;
+}
+
+.controls textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.controls input:focus,
+.controls textarea:focus,
+.controls select:focus {
+    border-color: #ff5a1f;
+}
+
+.controls input[type="color"] {
+    height: 50px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+
+/* =========================
+   GENERATE BUTTON
+========================= */
+
+.generate-btn {
+    width: 100%;
+
+    margin-top: 30px;
+    padding: 15px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #ff5a1f;
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.generate-btn:hover {
+    opacity: 0.85;
+}
+
+
+/* =========================
+   PREVIEW
+========================= */
+
+.preview-section {
+    min-width: 0;
+}
+
+.banner-preview {
+
+    width: 100%;
+    min-height: 430px;
+
+    border-radius: 18px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 70px;
+
+    background: #181818;
+
+    border: 1px solid #333;
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* orange design line */
+
+.banner-preview::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    border: 2px solid #ff5a1f;
+
+    border-radius: 50%;
+
+    right: -80px;
+    bottom: -100px;
+
+    opacity: 0.5;
+}
+
+
+/* banner content */
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 600px;
+}
+
+.brand {
+    color: #ff5a1f;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    margin-bottom: 25px;
+}
+
+.banner-content h2 {
+
+    font-size: 52px;
+    line-height: 1.05;
+
+    margin-bottom: 20px;
+}
+
+.banner-content p {
+
+    color: #bbb;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+.preview-button {
+
+    padding: 13px 24px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: #ff5a1f;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   PREVIEW INFO
+========================= */
+
+.preview-info {
+
+    margin-top: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.preview-info span {
+    color: #666;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.download-btn {
+
+    padding: 12px 20px;
+
+    border: 1px solid #ff5a1f;
+
+    background: transparent;
+
+    color: #ff5a1f;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background: #ff5a1f;
+    color: white;
+}
+
+
+/* =========================
+   PROCESS
+========================= */
+
+.process {
+
+    width: 84%;
+    margin: 100px auto;
+}
+
+.process-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.process-card {
+
+    background: #151515;
+
+    border: 1px solid #292929;
+
+    padding: 30px;
+
+    border-radius: 15px;
+}
+
+.process-card span {
+
+    color: #ff5a1f;
+
+    font-size: 14px;
+}
+
+.process-card h3 {
+
+    margin-top: 25px;
+
+    font-size: 20px;
+}
+
+.process-card p {
+
+    margin-top: 12px;
+
+    color: #999;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    padding: 40px 8%;
+
+    border-top: 1px solid #222;
+
+    text-align: center;
+
+    color: #666;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .designer {
+        grid-template-columns: 1fr;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar nav {
+        display: none;
+    }
+
+    .designer,
+    .process {
+        width: 90%;
+    }
+
+    .banner-preview {
+        padding: 35px;
+    }
+
+    .banner-content h2 {
+        font-size: 36px;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

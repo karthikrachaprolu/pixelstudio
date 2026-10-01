@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Post Template Builder | PixelStudio</title>
+
+    <link rel="stylesheet" href="css/post-template-builder.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="social-branding.html" class="logo">
+        Pixel<span>Studio</span>
+    </a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="brand-design.html">Services</a>
+        <a href="index.html">Our Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="eyebrow">
+            02 / SOCIAL BRANDING
+        </span>
+
+        <h1>
+            Post Template
+            <span>Builder.</span>
+        </h1>
+
+        <p>
+            Create a consistent social-media post template
+            using your brand identity, content and visual style.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- BUILDER -->
+
+<main class="builder">
+
+    <!-- SETTINGS -->
+
+    <section class="controls">
+
+        <div class="section-title">
+            <span>01</span>
+            <h2>Post Building Settings</h2>
+        </div>
+
+
+        <label>
+            Brand Name
+        </label>
+
+        <input
+            type="text"
+            id="brandName"
+            value="PixelStudio"
+            placeholder="Enter brand name"
+        >
+
+
+        <label>
+            Post Title
+        </label>
+
+        <input
+            type="text"
+            id="postTitle"
+            value="Build Your Brand"
+            placeholder="Enter post title"
+        >
+
+
+        <label>
+            Post Description
+        </label>
+
+        <textarea
+            id="postDescription"
+            placeholder="Enter your post content"
+        >Creative digital solutions for modern brands.</textarea>
+
+
+        <label>
+            Button / CTA Text
+        </label>
+
+        <input
+            type="text"
+            id="ctaText"
+            value="Learn More"
+            placeholder="Example: Learn More"
+        >
+
+
+        <label>
+            Template Style
+        </label>
+
+        <select id="templateStyle">
+
+            <option value="modern">
+                Modern
+            </option>
+
+            <option value="minimal">
+                Minimal
+            </option>
+
+            <option value="bold">
+                Bold
+            </option>
+
+            <option value="creative">
+                Creative
+            </option>
+
+        </select>
+
+
+        <label>
+            Background Color
+        </label>
+
+        <div class="color-control">
+
+            <input
+                type="color"
+                id="backgroundColor"
+                value="#151515"
+            >
+
+            <span id="backgroundValue">
+                #151515
+            </span>
+
+        </div>
+
+
+        <label>
+            Accent Color
+        </label>
+
+        <div class="color-control">
+
+            <input
+                type="color"
+                id="accentColor"
+                value="#ff5a1f"
+            >
+
+            <span id="accentValue">
+                #FF5A1F
+            </span>
+
+        </div>
+
+
+        <label>
+            Upload Post Image
+        </label>
+
+        <input
+            type="file"
+            id="postImage"
+            accept="image/*"
+        >
+
+
+        <button
+            class="build-btn"
+            id="buildBtn"
+        >
+            Build Post Template →
+        </button>
+
+
+        <div
+            class="success-message"
+            id="successMessage"
+        >
+            Post Template Built Successfully ✓
+        </div>
+
+    </section>
+
+
+    <!-- PREVIEW -->
+
+    <section class="preview-section">
+
+        <div class="section-title">
+
+            <span>02</span>
+
+            <h2>
+                Live Preview
+            </h2>
+
+        </div>
+
+
+        <div
+            class="post-preview"
+            id="postPreview"
+        >
+
+            <div class="post-top">
+
+                <span
+                    id="previewBrand"
+                    class="preview-brand"
+                >
+                    PixelStudio
+                </span>
+
+            </div>
+
+
+            <div
+                class="post-image-area"
+                id="postImageArea"
+            >
+
+                <div class="image-placeholder">
+                    YOUR IMAGE
+                </div>
+
+            </div>
+
+
+            <div class="post-content">
+
+                <span
+                    class="post-label"
+                    id="previewLabel"
+                >
+                    SOCIAL BRANDING
+                </span>
+
+
+                <h2 id="previewTitle">
+                    Build Your Brand
+                </h2>
+
+
+                <p id="previewDescription">
+                    Creative digital solutions for modern brands.
+                </p>
+
+
+                <button
+                    class="cta-button"
+                    id="previewCTA"
+                >
+                    Learn More
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="preview-actions">
+
+            <span>
+                LIVE POST PREVIEW
+            </span>
+
+            <button
+                class="download-btn"
+                id="downloadBtn"
+            >
+                Download Template
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- PROCESS -->
+
+<section class="process">
+
+    <div class="section-title">
+
+        <span>03</span>
+
+        <h2>
+            Post Design Process
+        </h2>
+
+    </div>
+
+
+    <div class="process-grid">
+
+        <div class="process-card">
+
+            <span>01</span>
+
+            <h3>
+                Content
+            </h3>
+
+            <p>
+                Add your brand name, title,
+                description and call-to-action.
+            </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+            <span>02</span>
+
+            <h3>
+                Visual Style
+            </h3>
+
+            <p>
+                Select a template style and
+                customise your brand colours.
+            </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+            <span>03</span>
+
+            <h3>
+                Preview
+            </h3>
+
+            <p>
+                See your social-media post
+                update instantly.
+            </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+            <span>04</span>
+
+            <h3>
+                Export
+            </h3>
+
+            <p>
+                Download your finished post
+                template when ready.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    © 2026 PixelStudio. All Rights Reserved.
+
+</footer>
+
+
+<script src="js/post-template-builder.js"></script>
+
+</body>
+
+</html>

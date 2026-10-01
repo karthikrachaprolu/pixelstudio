@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | PixelStudio</title>
+
+    <meta
+        name="description"
+        content="Get in touch with PixelStudio for creative, digital and design solutions."
+    >
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        /* =================================================
+           CONTACT PAGE
+        ================================================= */
+
+        .contact-hero {
+            padding-top: 190px;
+            padding-bottom: 90px;
+
+            background:
+                radial-gradient(
+                    circle at 80% 20%,
+                    rgba(255, 77, 15, 0.10),
+                    transparent 35%
+                ),
+                var(--bg);
+        }
+
+        .contact-hero h1 {
+            font-family: "Space Grotesk", sans-serif;
+
+            font-size: clamp(48px, 7vw, 82px);
+
+            line-height: 1;
+
+            letter-spacing: -4px;
+
+            margin-bottom: 25px;
+        }
+
+        .contact-hero h1 span {
+            display: block;
+            color: var(--accent);
+        }
+
+        .contact-hero p {
+            max-width: 650px;
+
+            color: var(--text-secondary);
+
+            font-size: 16px;
+
+            line-height: 1.8;
+        }
+
+
+        /* =================================================
+           CONTACT GRID
+        ================================================= */
+
+        .contact-grid {
+            display: grid;
+
+            grid-template-columns: 0.8fr 1.2fr;
+
+            gap: 25px;
+
+            align-items: stretch;
+        }
+
+
+        /* =================================================
+           CONTACT INFORMATION
+        ================================================= */
+
+        .contact-info {
+            padding: 40px;
+
+            background: var(--card);
+
+            border: 1px solid var(--border);
+
+            border-radius: var(--radius-md);
+        }
+
+        .contact-info h2 {
+            font-family: "Space Grotesk", sans-serif;
+
+            font-size: 30px;
+
+            margin-bottom: 15px;
+        }
+
+        .contact-info > p {
+            color: var(--text-secondary);
+
+            font-size: 14px;
+
+            line-height: 1.8;
+
+            margin-bottom: 35px;
+        }
+
+        .contact-details {
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 22px;
+        }
+
+        .contact-detail {
+            display: flex;
+
+            align-items: flex-start;
+
+            gap: 15px;
+        }
+
+        .contact-detail-icon {
+            flex-shrink: 0;
+
+            width: 45px;
+            height: 45px;
+
+            display: grid;
+
+            place-items: center;
+
+            border-radius: 11px;
+
+            background: rgba(255, 77, 15, 0.10);
+
+            border: 1px solid rgba(255, 77, 15, 0.22);
+
+            color: var(--accent);
+
+            font-size: 18px;
+        }
+
+        .contact-detail h4 {
+            font-size: 13px;
+
+            margin-bottom: 3px;
+        }
+
+        .contact-detail p,
+        .contact-detail a {
+            color: var(--text-secondary);
+
+            font-size: 13px;
+        }
+
+        .contact-detail a {
+            transition: var(--transition);
+        }
+
+        .contact-detail a:hover {
+            color: var(--accent);
+        }
+
+
+        /* =================================================
+           CONTACT FORM
+        ================================================= */
+
+        .contact-form-wrapper {
+            padding: 40px;
+
+            background: var(--card);
+
+            border: 1px solid var(--border);
+
+            border-radius: var(--radius-md);
+        }
+
+        .contact-form-wrapper h2 {
+            font-family: "Space Grotesk", sans-serif;
+
+            font-size: 30px;
+
+            margin-bottom: 10px;
+        }
+
+        .contact-form-wrapper > p {
+            color: var(--text-secondary);
+
+            font-size: 14px;
+
+            margin-bottom: 30px;
+        }
+
+        .contact-form {
+            display: grid;
+
+            gap: 20px;
+        }
+
+        .form-row {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 15px;
+        }
+
+        .form-group {
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 8px;
+        }
+
+        .form-group label {
+            font-size: 12px;
+
+            font-weight: 600;
+
+            color: var(--text-secondary);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+
+            width: 100%;
+
+            padding: 14px 16px;
+
+            background: var(--bg);
+
+            border: 1px solid var(--border);
+
+            border-radius: 9px;
+
+            color: var(--text);
+
+            font-family: inherit;
+
+            font-size: 13px;
+
+            outline: none;
+
+            transition: var(--transition);
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: var(--text-muted);
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--accent);
+
+            box-shadow:
+                0 0 0 3px rgba(255, 77, 15, 0.08);
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+
+            resize: vertical;
+        }
+
+        .form-group select {
+            cursor: pointer;
+        }
+
+        .form-submit {
+            margin-top: 5px;
+        }
+
+        .form-submit .btn {
+            cursor: pointer;
+
+            border: none;
+        }
+
+
+        /* =================================================
+           SOCIAL SECTION
+        ================================================= */
+
+        .social-section {
+            text-align: center;
+        }
+
+        .social-grid {
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 15px;
+
+            margin-top: 45px;
+        }
+
+        .social-card {
+            padding: 25px;
+
+            background: var(--card);
+
+            border: 1px solid var(--border);
+
+            border-radius: var(--radius-md);
+
+            transition: var(--transition);
+        }
+
+        .social-card:hover {
+            transform: translateY(-6px);
+
+            border-color: rgba(255, 77, 15, 0.35);
+        }
+
+        .social-icon {
+            width: 48px;
+            height: 48px;
+
+            display: grid;
+
+            place-items: center;
+
+            margin: 0 auto 15px;
+
+            border-radius: 50%;
+
+            background: rgba(255, 77, 15, 0.10);
+
+            color: var(--accent);
+
+            font-size: 18px;
+        }
+
+        .social-card h3 {
+            font-family: "Space Grotesk", sans-serif;
+
+            font-size: 16px;
+
+            margin-bottom: 5px;
+        }
+
+        .social-card p {
+            color: var(--text-muted);
+
+            font-size: 12px;
+        }
+
+
+        /* =================================================
+           CONTACT RESPONSIVE
+        ================================================= */
+
+        @media (max-width: 850px) {
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .social-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            .contact-hero {
+                padding-top: 140px;
+                padding-bottom: 65px;
+            }
+
+            .contact-hero h1 {
+                font-size: 48px;
+
+                letter-spacing: -3px;
+            }
+
+            .contact-info,
+            .contact-form-wrapper {
+                padding: 28px 22px;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .social-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="header" id="header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-mark">
+                    P
+                </span>
+
+                <span class="logo-text">
+                    Pixel<span>Studio</span>
+                </span>
+
+            </a>
+
+
+            <nav class="navbar" id="navbar">
+
+                <a href="index.html" class="nav-link">
+                    Home
+                </a>
+
+                <a href="index.html#services" class="nav-link">
+                    Services
+                </a>
+
+                <a href="index.html#work" class="nav-link">
+                    Our Work
+                </a>
+
+                <a href="about.html" class="nav-link">
+                    About
+                </a>
+
+                <a href="contact.html" class="nav-link active">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <div class="nav-actions">
+
+                <button
+                    class="theme-toggle"
+                    id="themeToggle"
+                    aria-label="Toggle dark and light mode"
+                >
+                    <span class="theme-icon" id="themeIcon">
+                        ☀
+                    </span>
+                </button>
+
+
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Open navigation menu"
+                >
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- CONTACT HERO -->
+
+        <section class="contact-hero">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="section-label">
+                        GET IN TOUCH
+                    </span>
+
+                    <h1>
+                        Let's create
+                        <span>something great.</span>
+                    </h1>
+
+                    <p>
+                        Have a project, idea or creative challenge?
+                        Tell us what you're working on and let's
+                        explore how PixelStudio can help.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT AREA -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="contact-grid">
+
+
+                    <!-- =====================================
+                         CONTACT INFORMATION
+                    ====================================== -->
+
+                    <div class="contact-info">
+
+                        <span class="section-label">
+                            CONTACT
+                        </span>
+
+                        <h2>
+                            Let's talk.
+                        </h2>
+
+                        <p>
+                            Whether you have a new idea or need help
+                            improving an existing digital experience,
+                            we'd love to hear from you.
+                        </p>
+
+
+                        <div class="contact-details">
+
+
+                            <!-- Email -->
+
+                            <div class="contact-detail">
+
+                                <div class="contact-detail-icon">
+                                    @
+                                </div>
+
+                                <div>
+
+                                    <h4>
+                                        Email
+                                    </h4>
+
+                                    <a href="mailto:karthikrachaprolu869@gmail.com">
+                                       karthikrachaprolu869@gmail.com
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Phone -->
+
+                            <div class="contact-detail">
+
+                                <div class="contact-detail-icon">
+                                    ☎
+                                </div>
+
+                                <div>
+
+                                    <h4>
+                                        Phone
+                                    </h4>
+
+                                    <a href="tel:+91 9705296182">
+                                        +91 9705296182
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+
+                         <!-- LOCATION -->
+<section class="location-section">
+
+    <div class="location-content">
+
+        <span class="section-label">
+            OUR LOCATION
+        </span>
+
+        <h2>
+            Find us
+            <span>here.</span>
+        </h2>
+
+        <p>
+            PixelStudio<br>
+            Eluru, Andhra Pradesh, India
+        </p>
+
+    </div>
+
+
+    <div class="map-container">
+
+        <iframe
+            src="https://www.google.com/maps?q=Eluru,Andhra%20Pradesh,India&output=embed"
+            width="100%"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+    </div>
+
+</section>
+
+
+                            <!-- Working Hours -->
+
+                            <div class="contact-detail">
+
+                                <div class="contact-detail-icon">
+                                    ◷
+                                </div>
+
+                                <div>
+
+                                    <h4>
+                                        Working Hours
+                                    </h4>
+
+                                    <p>
+                                        Monday – Friday
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =====================================
+                         CONTACT FORM
+                    ====================================== -->
+
+                    <div class="contact-form-wrapper">
+
+                        <span class="section-label">
+                            START A PROJECT
+                        </span>
+
+                        <h2>
+                            Tell us about it.
+                        </h2>
+
+                        <p>
+                            Fill in the details below and we'll
+                            understand your project better.
+                        </p>
+
+
+                        <form
+                            class="contact-form"
+                            id="contactForm"
+                        >
+
+
+                            <!-- Name + Email -->
+
+                            <div class="form-row">
+
+                                <div class="form-group">
+
+                                    <label for="name">
+                                        Full Name
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        placeholder="Your name"
+                                        required
+                                    >
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="email">
+                                        Email Address
+                                    </label>
+
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        placeholder="you@example.com"
+                                        required
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Project Type + Phone -->
+
+                            <div class="form-row">
+
+                                <div class="form-group">
+
+                                    <label for="project">
+                                        Project Type
+                                    </label>
+
+                                    <select
+                                        id="project"
+                                        name="project"
+                                    >
+
+                                        <option value="">
+                                            Select a service
+                                        </option>
+
+                                        <option value="branding">
+                                            Brand Design
+                                        </option>
+
+                                        <option value="uiux">
+                                            UI / UX Design
+                                        </option>
+
+                                        <option value="marketing">
+                                            Digital Marketing
+                                        </option>
+
+                                        <option value="content">
+                                            Creative Content
+                                        </option>
+
+                                        <option value="website">
+                                            Website Development
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="phone">
+                                        Phone Number
+                                    </label>
+
+                                    <input
+                                        type="tel"
+                                        id="phone"
+                                        name="phone"
+                                        placeholder="+91 00000 00000"
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Message -->
+
+                            <div class="form-group">
+
+                                <label for="message">
+                                    Project Details
+                                </label>
+
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    placeholder="Tell us about your project..."
+                                    required
+                                ></textarea>
+
+                            </div>
+
+
+                            <!-- Submit -->
+
+                            <div class="form-submit">
+
+                                <button
+                                    type="submit"
+                                    class="btn btn-primary"
+                                >
+                                    Send Message
+                                    <span>↗</span>
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SOCIAL
+        ================================================== -->
+
+        <section class="section social-section">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="section-label">
+                        FOLLOW ALONG
+                    </span>
+
+                    <h2>
+                        Connect with
+                        <span>PixelStudio.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="social-grid">
+
+
+                    <a href="#" class="social-card">
+
+                        <div class="social-icon">
+                            ◎
+                        </div>
+
+                        <h3>
+                            Instagram
+                        </h3>
+
+                        <p>
+                            @pixelstudio
+                        </p>
+
+                    </a>
+
+
+                    <a href="#" class="social-card">
+
+                        <div class="social-icon">
+                            in
+                        </div>
+
+                        <h3>
+                            LinkedIn
+                        </h3>
+
+                        <p>
+                            PixelStudio
+                        </p>
+
+                    </a>
+
+
+                    <a href="#" class="social-card">
+
+                        <div class="social-icon">
+                            X
+                        </div>
+
+                        <h3>
+                            X / Twitter
+                        </h3>
+
+                        <p>
+                            @pixelstudio
+                        </p>
+
+                    </a>
+
+
+                    <a href="mailto:hello@pixelstudio.com"
+                       class="social-card">
+
+                        <div class="social-icon">
+                            @
+                        </div>
+
+                        <h3>
+                            Email
+                        </h3>
+
+                        <p>
+                            hello@pixelstudio.com
+                        </p>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CTA
+        ================================================== -->
+
+        <section class="cta section">
+
+            <div class="container">
+
+                <div class="cta-box">
+
+                    <span class="section-label">
+                        PIXELSTUDIO
+                    </span>
+
+                    <h2>
+                        Your idea deserves
+                        <span>to be seen.</span>
+                    </h2>
+
+                    <p>
+                        Let's turn your vision into a creative
+                        digital experience.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-main">
+
+
+                <div class="footer-brand">
+
+                    <a href="index.html" class="logo">
+
+                        <span class="logo-mark">
+                            P
+                        </span>
+
+                        <span class="logo-text">
+                            Pixel<span>Studio</span>
+                        </span>
+
+                    </a>
+
+                    <p>
+                        Integrated Digital Creative Solutions Platform.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <div>
+
+                        <h4>
+                            Explore
+                        </h4>
+
+                        <a href="index.html">
+                            Home
+                        </a>
+
+                        <a href="about.html">
+                            About
+                        </a>
+
+                        <a href="index.html#services">
+                            Services
+                        </a>
+
+                        <a href="index.html#work">
+                            Our Work
+                        </a>
+
+                    </div>
+
+
+                    <div>
+
+                        <h4>
+                            Connect
+                        </h4>
+
+                        <a href="contact.html">
+                            Contact
+                        </a>
+
+                        <a href="#">
+                            Instagram
+                        </a>
+
+                        <a href="#">
+                            LinkedIn
+                        </a>
+
+                        <a href="#">
+                            Email
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 PixelStudio. All Rights Reserved.
+                </p>
+
+                <p>
+                    Designed & Built with Creativity.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Main JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
